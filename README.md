@@ -18,6 +18,7 @@ A RESTful Web API built with ASP.NET Core 8 that allows you to perform full CRUD
 1.Clone the repository
 
 2.Configure the database
+
     Update appsettings.json with your local SQL Server Connection String
    
 3.Apply EF Migrations
