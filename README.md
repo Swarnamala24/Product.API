@@ -33,7 +33,7 @@ To update the database:
 
 if there any changes after the initial migration:
 
-dotnet ef migrations add <ChangesNames> --project Products.DAL --startup-project Products.Service
+**dotnet ef migrations add `<ChangesNames>` --project Products.DAL --startup-project Products.Service**
 
 and update the database:
 
