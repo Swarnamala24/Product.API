@@ -58,7 +58,7 @@ Each product has the following fields:
 | Price | decimal | Price of the product |
 | StockAvailable | int | Number of items in stock |
 | CreatedOn | DateTime | Timestamp of creation |
-| UpdatedOn | DateTime | Timestamp of creation |
+| UpdatedOn | DateTime | Timestamp of Updation |
 
 ---
 
