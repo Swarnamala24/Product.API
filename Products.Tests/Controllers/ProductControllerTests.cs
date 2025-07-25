@@ -193,7 +193,7 @@ namespace Products.Tests.Controllers
             //Arrange
             ProductsDto products = MockData.CreateProductDto();
             Product? response = null;
-            var expected = ApiResponse<Product>.FailureMessage("Product Not Found");
+            var expected = ApiResponse<Product>.FailureMessage("Product Not Found Or Stock Is Not Available");
             _mockProductOperations.Setup(x => x.UpdateStockDecrement(It.IsAny<long>(), It.IsAny<int>())).ReturnsAsync((false, false, response));
 
             //Act
