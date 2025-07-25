@@ -51,7 +51,7 @@ namespace Products.Service.Controllers
         {
             var (found, success, product) = await _productOperations.UpdateStockDecrement(id, quantity);
             if (!found || !success)
-                return NotFound(ApiResponse<Product>.FailureMessage("Product Not Found"));
+                return NotFound(ApiResponse<Product>.FailureMessage("Product Not Found Or Stock Is Not Available"));
             return Ok(ApiResponse<Product>.SuccessResponse(product));
         }
 
